@@ -1,0 +1,16 @@
+<query id="updateGame" action="update">
+    <tables>
+        <table name="bfc_attendance_games" />
+    </tables>
+    <columns>
+        <column name="title" var="title" />
+        <column name="game_date" var="game_date" />
+        <column name="lat" var="lat" />
+        <column name="lon" var="lon" />
+        <column name="point" var="point" />
+		<column name="limit_distance" var="limit_distance" filter="number" default="100" />
+    </columns>
+    <conditions>
+        <condition operation="equal" column="game_srl" var="game_srl" notnull="notnull" />
+    </conditions>
+</query>

@@ -1,0 +1,10 @@
+<query id="updateLog" action="update">
+    <tables><table name="bfc_attendance_log" /></tables>
+    <columns>
+        <column name="regdate" var="regdate" />
+        <column name="point_amount" var="point_amount" />
+    </columns>
+    <conditions>
+        <condition operation="equal" column="attendance_srl" var="attendance_srl" notnull="notnull" />
+    </conditions>
+</query>

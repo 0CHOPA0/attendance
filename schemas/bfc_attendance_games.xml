@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table name="bfc_attendance_games">
+    <column name="game_srl" type="bigint" size="11" notnull="notnull" primary_key="primary_key" />
+    <column name="title" type="varchar" size="250" notnull="notnull" />
+    <column name="game_date" type="date" notnull="notnull" />
+    <column name="lat" type="varchar" size="50" notnull="notnull" />
+    <column name="lon" type="varchar" size="50" notnull="notnull" />
+    <column name="limit_distance" type="number" size="11" default="100" /> <column name="point" type="number" size="11" default="0" />
+    <column name="regdate" type="date" />
+</table>

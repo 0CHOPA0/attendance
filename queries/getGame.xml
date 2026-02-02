@@ -1,0 +1,11 @@
+<query id="getGame" action="select">
+    <tables>
+        <table name="bfc_attendance_games" />
+    </tables>
+    <columns>
+        <column name="*" />
+    </columns>
+    <conditions>
+        <condition operation="equal" column="game_srl" var="game_srl" notnull="notnull" />
+    </conditions>
+</query>

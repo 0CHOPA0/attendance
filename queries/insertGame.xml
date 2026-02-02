@@ -1,0 +1,15 @@
+<query id="insertGame" action="insert">
+    <tables>
+        <table name="bfc_attendance_games" />
+    </tables>
+    <columns>
+        <column name="game_srl" var="game_srl" filter="number" notnull="notnull" />
+        <column name="title" var="title" notnull="notnull" />
+        <column name="game_date" var="game_date" notnull="notnull" />
+        <column name="lat" var="lat" notnull="notnull" />
+        <column name="lon" var="lon" notnull="notnull" />
+        <column name="point" var="point" filter="number" default="0" />
+        <column name="regdate" var="regdate" default="curdate()" />
+		<column name="limit_distance" var="limit_distance" filter="number" default="100" />
+    </columns>
+</query>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <grants>
+    </grants>
+    <actions>
+        <action name="dispBfc_attendanceAdminConfig" class="Controllers\Admin" menu-name="bfc_attendance" admin-index="true" />
+        <action name="procBfc_attendanceAdminInsertStadium" class="Controllers\Admin" />
+        <action name="procBfc_attendanceAdminDeleteStadium" class="Controllers\Admin" />
+        
+        <action name="dispBfc_attendanceAdminGameList" class="Controllers\Admin" menu-name="game_list" />
+        <action name="procBfc_attendanceAdminInsertGame" class="Controllers\Admin" />
+        <action name="procBfc_attendanceAdminDeleteGame" class="Controllers\Admin" />
+        
+        <action name="dispBfc_attendanceIndex" class="Controllers\Index" index="true" />
+        <action name="procBfc_attendanceIndexLog" class="Controllers\Index" />
+		
+		<action name="dispBfc_attendanceAdminMemberLog" class="Controllers\Admin" menu-name="member_log" />
+		<action name="procBfc_attendanceAdminUpdateLog" class="Controllers\Admin" />
+		<action name="procBfc_attendanceAdminDeleteLog" class="Controllers\Admin" />
+    </actions>
+    
+    <eventHandlers>
+        <eventHandler after="document.insertDocument" class="Controllers\EventHandlers" method="afterInsertDocument" />
+        <eventHandler after="document.updateDocument" class="Controllers\EventHandlers" method="afterUpdateDocument" />
+        <eventHandler after="document.deleteDocument" class="Controllers\EventHandlers" method="afterDeleteDocument" />
+    </eventHandlers>
+</module>

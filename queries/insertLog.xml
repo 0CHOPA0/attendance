@@ -1,0 +1,10 @@
+<query id="insertLog" action="insert">
+    <tables><table name="bfc_attendance_log" /></tables>
+    <columns>
+        <column name="attendance_srl" var="attendance_srl" filter="number" />
+        <column name="game_srl" var="game_srl" filter="number" /> <column name="member_srl" var="member_srl" filter="number" notnull="notnull" />
+        <column name="regdate" var="regdate" notnull="notnull" />
+        <column name="ipaddress" var="ipaddress" />
+        <column name="point_amount" var="point_amount" filter="number" default="0" />
+    </columns>
+</query>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="0.2">
+	<title xml:lang="ko">BFC REDSGO 직관 인증 모듈</title>
+	<description xml:lang="ko">GPS를 이용하여 직관 인증을 수행하고 포인트를 지급합니다.</description>
+	<version>1.5.0</version>
+	<date>2026-02-02</date>
+	<category>service</category>
+	<author email_address="0chopa0@gmail.com">
+		<name xml:lang="ko">BFC_REDSGO</name>
+	</author>
+</module>
