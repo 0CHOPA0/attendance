@@ -1,8 +1,0 @@
-<query id="deleteStadium" action="delete">
-    <tables>
-        <table name="bfc_attendance_stadiums" />
-    </tables>
-    <conditions>
-        <condition operation="equal" column="stadium_srl" var="stadium_srl" notnull="notnull" />
-    </conditions>
-</query>
